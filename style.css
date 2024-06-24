@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+body {
+    height: 100vh;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    /* background: url('img/Closed_laptop.jpg');
+    background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* header styles */
+
+header {
+    background-color: darkblue;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+header h1 {
+    margin: 20px;
+    font-size: 2.5rem;
+    font-weight:800;
+    margin-bottom: 20px;
+    color: gold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* main styles */
+
+main {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.section {
+    /* background: rgba(0, 0, 0, 0.7); */
+    padding: 30px;
+    margin: 20px;
+    border-radius: 8px;
+    width: 60%;
+    height: 400px;
+    max-width: 600px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: -10px;
+}
+
+.section.one {
+    align-self: flex-start;
+    margin-left: 20px;
+}
+
+.section.two {
+    align-self: flex-end;
+    margin-right: 20px;
+}
+
+main h3 {
+    font-size:x-large;
+    font-weight: 800;
+    font-style: italic;
+    color: darkorange;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 10px;
+    font: 300;
+    color: blueviolet;
+}
+
+/* footer styles*/
+
+footer {
+    background: black;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    z-index: 1;
+}
+
+footer p {
+    margin: 0;
+    font: 200;
+    color: beige;
+}
+
+/* Responsiveness */
+
+/* Styles for smaller screen sizes */
+
+@media (max-width: 768px) {
+
+    body {
+        background-size: auto;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .section {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        transform: none;
+    }
+
+    .section.one,
+    .section.two {
+        align-self: center;
+        margin: 10px auto;
+    }
+}
+
+/* Styles for tablets */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    main {
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section {
+        width: calc(50%);
+        margin: 10px;
+    }
+
+    .section.one,
+    .section.two {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

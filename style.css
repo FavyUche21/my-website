@@ -9,9 +9,6 @@ body {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
   flex-direction: column;
-
-  /* background: url('img/Closed_laptop.jpg');
-    background-repeat: no-repeat; */
   background-size: cover;
   background-position: center center;
   align-items: center;
@@ -100,11 +97,52 @@ footer p {
   color: beige;
 }
 
-/* Responsiveness */
+/* Media Queries */
 
-/* Styles for smaller screen sizes */
-
+/* For tablets and below */
 @media (max-width: 768px) {
+  main {
+    padding: 50px;
+  }
+
+  .content-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image-container {
+    width: 100%;
+  }
+
+  .content-container h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .content-container h3 {
+    font-size: 1.2rem;
+  }
+
+  .column {
+    gap: 10px;
+  }
+
+  .column a {
+    font-size: 0.9rem;
+  }
+}
+
+/* @media (max-width: 768px) {
   body {
     background-size: auto;
   }
@@ -125,11 +163,11 @@ footer p {
     align-self: center;
     margin: 10px auto;
   }
-}
+} */
 
 /* Styles for tablets */
 
-@media (min-width: 769px) and (max-width: 1024px) {
+/* @media (min-width: 769px) and (max-width: 1024px) {
   main {
     flex-direction: row;
     flex-wrap: wrap;
@@ -146,4 +184,4 @@ footer p {
     width: 100%;
     margin: 10px 0;
   }
-}
+} */

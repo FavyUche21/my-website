@@ -1,6 +1,12 @@
-let time = new Date().toLocaleTimeString();
+function updateTimeUTC() {
+let time = new Date().toUTCString();
 
 document.querySelector("[data-testid='currentTimeUTC']").innerHTML = time;
+}
+
+setInterval(updateTimeUTC, 1000);
+
+updateTimeUTC();
 
 const daysOfTheWeek = [
   "Sunday",
@@ -12,7 +18,7 @@ const daysOfTheWeek = [
   "Saturday",
 ];
 
-const currentDate = new Date(); //current date
+const currentDate = new Date();
 
 const currentDayOfTheWeek = daysOfTheWeek[currentDate.getDay()];
 

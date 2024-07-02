@@ -16,8 +16,6 @@ body {
   justify-content: space-between;
 }
 
-/* header styles */
-
 header {
   background-color: darkblue;
   padding: 20px;
@@ -35,7 +33,6 @@ header h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-/* main styles */
 main {
   width: 100%;
   padding: 100px;
@@ -82,8 +79,6 @@ main {
     text-decoration: underline;
 }
 
-/* footer styles*/
-
 footer {
   background: black;
   text-align: center;
@@ -98,70 +93,17 @@ footer p {
   color: beige;
 }
 
-/* Media Queries */
-
-/* For tablets and below */
-/* @media (max-width: 768px) {
-  main {
-    padding: 50px;
-  }
-
-  .content-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .image-container {
-    width: 100%;
-  }
-
-  .content-container h3 {
-    font-size: 1.5rem;
-  }
-} */
-
-/* For mobile phones */
-/* @media (max-width: 480px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  main {
-    padding: 20px;
-  }
-
-  .content-container h3 {
-    font-size: 1.2rem;
-  }
-
-  .column {
-    gap: 10px;
-  }
-
-  .column a {
-    font-size: 0.9rem;
-  }
-} */
-
 @media (max-width: 768px) {
   body {
-    /* background-size: auto; */
     padding: 0 10px;
     overflow-x: hidden;
   }
 
   main {
-    /* flex-direction: column; */
     padding: 20px;
   }
 
   .content-container {
-    /* width: 100%;
-    height: auto;
-    margin: 10px 0;
-    transform: none;
-    font-size: 1.2rem;
-    padding: 0 10px; */
     align-items: flex-start;
     flex-direction: column;
     padding-bottom: 15px;
@@ -174,13 +116,6 @@ footer p {
   .content-container h3 {
     font-size: 1.5rem;
   }
-
-  /* .section-one,
-  .section-two {
-    width: 100%;
-    margin: 10px 0;
-    box-sizing: border-box;
-  } */
 
   .section-two{
     margin-bottom: 20px;
@@ -197,38 +132,6 @@ footer p {
   }
 }
 
-/* Styles for tablets */
-
-/* @media (max-width: 480px) {
-  main {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .content-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .image-container {
-    width: 100%;
-  }
-
-  .content-container h3 {
-    font-size: 1.5rem;
-  }
-
-  .section-one,
-  .section-two {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  .section-two{
-    padding-bottom: 20px;
-  }
-} */
 @media (max-width: 480px) {
   header h1 {
     font-size: 1.5rem;

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
@@ -100,7 +101,7 @@ footer p {
 /* Media Queries */
 
 /* For tablets and below */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   main {
     padding: 50px;
   }
@@ -117,10 +118,10 @@ footer p {
   .content-container h3 {
     font-size: 1.5rem;
   }
-}
+} */
 
 /* For mobile phones */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   header h1 {
     font-size: 2rem;
   }
@@ -140,48 +141,111 @@ footer p {
   .column a {
     font-size: 0.9rem;
   }
-}
+} */
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   body {
-    background-size: auto;
+    /* background-size: auto; */
+    padding: 0 10px;
+    overflow-x: hidden;
   }
 
   main {
-    flex-direction: column;
+    /* flex-direction: column; */
+    padding: 20px;
   }
 
-  .section {
-    width: 100%;
+  .content-container {
+    /* width: 100%;
     height: auto;
     margin: 10px 0;
     transform: none;
+    font-size: 1.2rem;
+    padding: 0 10px; */
+    align-items: flex-start;
+    flex-direction: column;
   }
 
-  .section.one,
-  .section.two {
-    align-self: center;
-    margin: 10px auto;
+  .image-container {
+    width: 100%;
   }
-} */
+
+  .content-container h3 {
+    font-size: 1.5rem;
+  }
+
+  /* .section-one,
+  .section-two {
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+  } */
+
+  .section-two{
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+    
+  .column {
+    gap: 10px;
+    width: 100%;
+  }
+
+  .column a {
+    font-size: 0.9rem;
+  }
+}
 
 /* Styles for tablets */
 
-/* @media (min-width: 769px) and (max-width: 1024px) {
+/* @media (max-width: 480px) {
   main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .section {
-    width: calc(50%);
-    margin: 10px;
+  .content-container {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .section.one,
-  .section.two {
+  .image-container {
+    width: 100%;
+  }
+
+  .content-container h3 {
+    font-size: 1.5rem;
+  }
+
+  .section-one,
+  .section-two {
     width: 100%;
     margin: 10px 0;
   }
+
+  .section-two{
+    padding-bottom: 20px;
+  }
 } */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .content-container h3 {
+    font-size: 1.2rem;
+  }
+
+  .column {
+    gap: 5px;
+  }
+
+  .column a {
+    font-size: 0.8rem;
+  }
+}
